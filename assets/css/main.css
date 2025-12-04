@@ -3219,3 +3219,85 @@ input, select, textarea {
 			}
 
 	}
+
+/* === Evora theming overrides === */
+
+:root {
+  --evora-blue: #2163A0;
+  --evora-orange: #FBA919;
+  --evora-red: #E93D25;
+  --evora-deep-orange: #DF6125;
+}
+
+/* Links */
+
+a {
+  color: var(--evora-blue);
+}
+
+a:hover,
+a:focus {
+  color: var(--evora-orange);
+}
+
+/* Buttons */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: var(--evora-blue);
+  border-color: var(--evora-blue);
+  color: #ffffff !important;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: var(--evora-deep-orange);
+  border-color: var(--evora-deep-orange);
+}
+
+/* Avatar highlight */
+
+.image.avatar img {
+  border-radius: 100%;
+  border: 3px solid var(--evora-orange);
+}
+
+/* Major icons / accent blobs (if used in your template) */
+
+.icon.major {
+  background-color: var(--evora-blue);
+  color: #ffffff;
+}
+
+/* Section title underline / accent bars */
+
+h2, h3, h4 {
+  letter-spacing: 0.08em;
+}
+
+h2:after,
+h3:after {
+  content: "";
+  display: block;
+  margin-top: 0.75em;
+  width: 3rem;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--evora-orange),
+    var(--evora-deep-orange)
+  );
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(33, 99, 160, 0.45), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(223, 97, 37, 0.35), transparent 55%),
+    #050712;
+}
