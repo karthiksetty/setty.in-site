@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Karthik Setty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal homepage of Karthik Setty" />
+  <style>
+    :root {
+      --bg: #050712;
+      --card: #101321;
+      --accent: #fba919;
+      --accent-soft: rgba(251, 169, 25, 0.14);
+      --text: #f7f7fb;
+      --muted: #9ca0be;
+      --border: rgba(255, 255, 255, 0.06);
+      --radius: 20px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, #26396b, transparent 60%),
+        radial-gradient(circle at bottom right, #3b214f, transparent 55%),
+        var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card-wrap {
+      max-width: 420px;
+      width: 100%;
+    }
+    .card {
+      background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.07)
+        ),
+        var(--card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+      padding: 24px 22px 18px;
+      backdrop-filter: blur(12px);
+    }
+    .top-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      padding: 3px;
+      border: 2px solid rgba(251, 169, 25, 0.8);
+      background:
+        radial-gradient(circle at 20% 0, #ffffff, transparent 55%),
+        radial-gradient(circle at 70% 120%, #fba919, transparent 60%),
+        #050712;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 650;
+      font-size: 28px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 1.5rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .tagline {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .tagline strong { color: var(--text); font-weight: 550; }
+    .chips {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .chip {
+      font-size: 0.72rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: rgba(5, 7, 18, 0.75);
+    }
+    .chip--accent {
+      border-color: rgba(251, 169, 25, 0.9);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 16px 0 14px;
+    }
+    .body-text {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .body-text p + p { margin-top: 8px; }
+    .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-top: 14px;
+      margin-bottom: 4px;
+    }
+    ul {
+      list-style: none;
+      display: grid;
+      gap: 4px;
+      font-size: 0.88rem;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(251, 169, 25, 0.85);
+      box-shadow: 0 0 0 6px rgba(251, 169, 25, 0.18);
+    }
+    .footer {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .link-pill {
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: var(--muted);
+      padding: 5px 9px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(5, 7, 18, 0.9);
+      transition: 0.15s ease;
+    }
+    .link-pill:hover {
+      color: var(--text);
+      border-color: rgba(251, 169, 25, 0.85);
+      background: rgba(251, 169, 25, 0.16);
+      transform: translateY(-1px);
+    }
+    .primary-pill {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      text-decoration: none;
+      color: #050712;
+      background: var(--accent);
+      border-radius: 999px;
+      padding: 7px 13px;
+      font-weight: 550;
+      box-shadow: 0 10px 26px rgba(251, 169, 25, 0.35);
+      white-space: nowrap;
+    }
+    .primary-pill::after {
+      content: "↗";
+      margin-left: 4px;
+      font-size: 0.85em;
+    }
+    .note {
+      margin-top: 10px;
+      font-size: 0.72rem;
+      color: var(--muted);
+      opacity: 0.8;
+    }
+    @media (max-width: 480px) {
+      .card { padding: 20px 16px 16px; }
+      .top-row { align-items: flex-start; }
+      .avatar { width: 64px; height: 64px; font-size: 24px; }
+      h1 { font-size: 1.35rem; }
+      .footer { flex-direction: column; align-items: flex-start; }
+      .primary-pill { width: 100%; text-align: center; justify-content: center; display: inline-flex; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card-wrap">
+    <section class="card" aria-label="Profile card for Karthik Setty">
+      <header class="top-row">
+        <div class="avatar" aria-hidden="true">KS</div>
+        <div>
+          <h1>Karthik Setty</h1>
+          <p class="tagline">
+            <strong>Co-CEO, Evora IT Solutions</strong><br />
+            Building digital services and teams that last.
+          </p>
+          <div class="chips">
+            <span class="chip chip--accent">Tech&nbsp;Leader</span>
+            <span class="chip">Consulting</span>
+            <span class="chip">Product Thinking</span>
+          </div>
+        </div>
+      </header>
+
+      <hr />
+
+      <section class="body-text">
+        <p>
+          I work at the intersection of <strong>software, consulting, and
+          product</strong> — helping organizations make digital transformation
+          real while creating space for people to grow.
+        </p>
+        <p>
+          Right now my focus is on <strong>scaling Evora</strong>, shaping a
+          sustainable consulting group, and making complex technology feel
+          simple and usable.
+        </p>
+
+        <p class="label">Current focus</p>
+        <ul>
+          <li>
+            <span class="dot"></span>
+            <span>Strategy & structure for a growing services group</span>
+          </li>
+          <li>
+            <span class="dot"></span>
+            <span>Long-term value for customers, not quick wins</span>
+          </li>
+          <li>
+            <span class="dot"></span>
+            <span>Healthy teams, clear ownership, less noise</span>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <div class="links">
+          <a class="link-pill" href="mailto:hello@setty.in">Email</a>
+          <a class="link-pill" href="https://www.linkedin.com/in/karthiksetty" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="link-pill" href="https://evorait.com" target="_blank" rel="noopener noreferrer">Evora</a>
+        </div>
+        <a class="primary-pill" href="mailto:setty@hey.com">Say hello</a>
+      </footer>
+
+      <p class="note">
+        Based in Düsseldorf · This page is intentionally minimal.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
