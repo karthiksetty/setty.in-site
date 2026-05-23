@@ -662,7 +662,7 @@ img.polaroid__img {
   .about__grid { grid-template-columns: 1fr; gap: 24px; }
   .focus { grid-template-columns: 1fr; }
   .note { transform: none !important; }
-  .tile--np, .tile--clock, .tile--cricket, .tile--boards, .tile--chocolate {
+  .tile--np, .tile--clock, .tile--cricket, .tile--boards, .tile--coffee {
     grid-column: span 12;
   }
   .current { grid-template-columns: 1fr; }
