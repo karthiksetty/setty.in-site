@@ -1,84 +1,360 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Karthik Setty</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Karthik Setty — Co-CEO at Evora IT Solutions. Working at the intersection of software, consulting, and business processes." />
+  <title>Karthik Setty</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Geist:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- ── Header / nav ─────────────────────────────────────────── -->
+  <header class="nav">
+    <a class="nav__brand" href="/">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 L14 9 L22 12 L14 15 L12 23 L10 15 L2 12 L10 9 Z" fill="var(--accent)" /></svg>
+      <span>Karthik Setty</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#currently">Currently</a>
+      <a href="#reads">Reads</a>
+      <a class="btn btn--ink" href="#contact">
+        Say hello
+        <span class="dot" aria-hidden="true"></span>
+      </a>
+    </nav>
+  </header>
 
-	<nav id="nav">
-		<span class="nav-name">Karthik Setty</span>
-		<a href="mailto:setty@hey.com" class="nav-cta">Get in touch &rarr;</a>
-	</nav>
+  <main>
+    <!-- ── Hero ──────────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__grid">
+        <div>
+          <span class="tag">
+            <span class="tag__dot" aria-hidden="true"></span>
+            Co-CEO @ Evora IT Solutions
+          </span>
 
-	<header id="hero">
-		<div class="hero-inner">
-			<img src="images/avatar.jpg" alt="Karthik Setty" class="hero-avatar" />
-			<h1 class="hero-name">Karthik Setty</h1>
-			<p class="hero-role">Co-CEO at <a href="https://evorait.com" target="_blank" rel="noopener noreferrer">Evora IT Solutions</a></p>
-			<p class="hero-tagline">Working at the intersection of software, consulting, and business processes.</p>
-		</div>
-	</header>
+          <h1 class="hero__title" id="hero-title">
+            Karthik
+            <span class="swoosh">
+              <svg viewBox="0 0 360 40" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M4 20 Q 90 6, 180 18 T 356 22" stroke="var(--accent)" stroke-width="22" fill="none" stroke-linecap="round" opacity="0.85" />
+              </svg>
+              <span>Setty</span>
+            </span>
+          </h1>
 
-	<main id="main">
+          <div class="hero__lede">
+            <svg class="squiggle" width="90" height="14" viewBox="0 0 120 14" aria-hidden="true">
+              <path d="M2 8 Q 12 1, 22 8 T 42 8 T 62 8 T 82 8 T 102 8 T 118 8" stroke="var(--accent)" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            </svg>
+            <p>
+              Working at the intersection of software, consulting, and the people who keep both honest, <em>making complex things feel simple</em>.
+            </p>
+          </div>
 
-		<section id="about">
-			<h2>About</h2>
-			<p>
-				I work at the intersection of <strong>software, consulting, and business processes</strong>,
-				helping organizations make digital transformation real while creating space for people to grow.
-			</p>
-			<p>
-				Right now my focus is on <strong>scaling Evora</strong>, shaping a sustainable consulting group,
-				and making <strong>complex technology and process</strong> feel simple and usable.
-			</p>
+          <div class="hero__cta">
+            <a class="btn btn--accent" href="mailto:setty@hey.com">setty@hey.com →</a>
+            <a class="btn--linked" href="#contact">or pull up a chair ↘</a>
+          </div>
+        </div>
 
-			<h3>Current focus</h3>
-			<ul>
-				<li>Strategy &amp; structure for a scaling consulting organization</li>
-				<li>Long-term value through sustainable change</li>
-				<li>Healthy teams, clear ownership, less noise</li>
-			</ul>
+        <!-- Polaroid stack -->
+        <div class="polaroids" aria-hidden="true">
+          <figure class="polaroid polaroid--back">
+            <img class="polaroid__img" src="images/cricket.jpg" alt="Cricket weekend" style="object-position: center 40%;" />
+            <figcaption class="polaroid__caption">cricket weekend</figcaption>
+          </figure>
 
-			<p class="interests">
-				Beyond work, I'm a <strong>technology enthusiast</strong>, board-game geek, gadget buff,
-				coffee connoisseur, and a curious reader, with a soft spot for cricket, chocolates,
-				and exploring the new.
-			</p>
-		</section>
+          <figure class="polaroid polaroid--front">
+            <span class="washi" aria-hidden="true"></span>
+            <img class="polaroid__img" src="images/avatar.jpg" alt="Karthik Setty" />
+            <figcaption class="polaroid__caption polaroid__caption--ink">
+              K.S. <span style="color: var(--muted);">·</span> 2026
+            </figcaption>
+          </figure>
 
-		<section id="contact">
-			<h2>Get in touch</h2>
-			<p>Best way to reach me is email or LinkedIn. Instagram is mostly personal and board-games.</p>
-			<ul class="contact-list">
-				<li>
-					<i class="fas fa-envelope"></i>
-					<a href="mailto:setty@hey.com">setty@hey.com</a>
-				</li>
-				<li>
-					<i class="fab fa-linkedin"></i>
-					<a href="https://www.linkedin.com/in/karthiksetty" target="_blank" rel="noopener noreferrer">linkedin.com/in/karthiksetty</a>
-				</li>
-				<li>
-					<i class="fab fa-instagram"></i>
-					<a href="https://instagram.com/s3tty" target="_blank" rel="noopener noreferrer">@s3tty</a>
-				</li>
-			</ul>
-		</section>
+          <div class="sticker">
+            Düsseldorf<br />×<br />Bengaluru
+          </div>
+        </div>
+      </div>
+    </section>
 
-	</main>
+    <!-- ── About ─────────────────────────────────────────────── -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__grid">
+        <header>
+          <span class="eyebrow">
+            <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 L14 9 L22 12 L14 15 L12 23 L10 15 L2 12 L10 9 Z" fill="var(--accent)" /></svg>
+            Chapter 01
+          </span>
+          <h2 class="section-title" id="about-title">The <em><i>work</i></em>,<br />in brief.</h2>
+          <svg class="squiggle" width="140" height="14" viewBox="0 0 120 14" aria-hidden="true">
+            <path d="M2 8 Q 12 1, 22 8 T 42 8 T 62 8 T 82 8 T 102 8 T 118 8" stroke="var(--accent)" stroke-width="2.5" fill="none" stroke-linecap="round" />
+          </svg>
+        </header>
+        <div class="about__copy">
+          <p>
+            I work at the intersection of <span class="highlight">software, consulting &amp; business processes</span>, helping organizations make digital transformation real while creating space for people to grow.
+          </p>
+          <p class="about__sub">
+            Right now my focus is on <em>scaling Evora</em>, shaping a sustainable consulting group, and making complex technology and process feel simple and usable.
+          </p>
+        </div>
+      </div>
 
-	<footer id="footer">
-		<span>&copy; <script>document.write(new Date().getFullYear())</script> Karthik Setty</span>
-		<span class="footer-dot">&middot;</span>
-		<span>Building teams &amp; systems that last</span>
-	</footer>
+      <div class="focus">
+        <article class="note note--accent">
+          <span class="note__tape" aria-hidden="true"></span>
+          <div class="note__no">01</div>
+          <h3 class="note__title">Strategy &amp; structure</h3>
+          <p class="note__body">For a scaling consulting organization.</p>
+        </article>
+        <article class="note note--paper">
+          <span class="note__tape" aria-hidden="true"></span>
+          <div class="note__no">02</div>
+          <h3 class="note__title">Long-term value</h3>
+          <p class="note__body">Through sustainable change, not chase-the-trend.</p>
+        </article>
+        <article class="note note--leaf">
+          <span class="note__tape" aria-hidden="true"></span>
+          <div class="note__no">03</div>
+          <h3 class="note__title">Healthy teams</h3>
+          <p class="note__body">Clear ownership, less noise.</p>
+        </article>
+      </div>
+    </section>
 
+    <!-- ── Currently ─────────────────────────────────────────── -->
+    <section class="currently" id="currently" aria-labelledby="currently-title">
+      <header class="currently__head">
+        <div>
+          <span class="eyebrow">
+            <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 L14 9 L22 12 L14 15 L12 23 L10 15 L2 12 L10 9 Z" fill="var(--accent)" /></svg>
+            Chapter 02
+          </span>
+          <h2 class="section-title" id="currently-title">Off the <em><i>clock.</i></em></h2>
+        </div>
+        <span class="currently__meta">updated weekly ✦</span>
+      </header>
+
+      <div class="bento">
+        <!-- Now playing -->
+        <article class="tile tile--paper tile--np" aria-label="Now playing">
+          <div class="np__head">
+            <span class="tile__label tile__label--paper">
+              <span class="np__live" aria-hidden="true"></span>
+              Now playing
+            </span>
+            <span style="font-family: var(--font-body); font-style: italic; font-size: 13px; color: var(--muted);">via Apple Music</span>
+          </div>
+          <div class="np__body">
+            <div class="np__cover" aria-hidden="true">♪</div>
+            <div class="np__meta">
+              <div class="np__track">cold/mess</div>
+              <div class="np__artist">Prateek Kuhad · cold/mess</div>
+              <div class="np__bar"><span></span></div>
+              <div class="np__time"><span>2:34</span><span>4:21</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Clock -->
+        <article class="tile tile--ink tile--clock" aria-label="Local time">
+          <span class="tile__label">Local · Düsseldorf</span>
+          <div class="clock__time" id="clock">
+            --<span class="sep">:</span>--<span class="tz">CET</span>
+          </div>
+          <div class="clock__foot">
+            <span class="clock__date" id="clock-date">—</span>
+            <span class="clock__zones" id="clock-zones">BLR — · NYC —</span>
+          </div>
+        </article>
+
+        <!-- Cricket -->
+        <article class="tile tile--leaf tile--cricket" aria-label="Cricket">
+          <span class="tile__label">Following</span>
+          <h3 class="tile__title">Cricket · IPL '26</h3>
+          <p class="tile__sub">RCB! RCB!</p>
+          <span class="tile__deco--bat" aria-hidden="true" style="font-size: 52px; right: 8px; bottom: 4px;">🏏</span>
+        </article>
+
+        <!-- Board games -->
+        <article class="tile tile--accent tile--boards" aria-label="Board games">
+          <span class="tile__label">Tabletop</span>
+          <h3 class="tile__title">Board-game geek</h3>
+          <div class="chips">
+            <span class="chip">7 Wonders</span>
+            <span class="chip">Ultimate Railroads</span>
+            <span class="chip">SETI</span>
+            <span class="chip">El Burro</span>
+          </div>
+          <span class="tile__deco--bat" aria-hidden="true" style="font-size: 52px; right: 8px; bottom: 4px;">🎲</span>
+        </article>
+
+        <!-- Coffee -->
+        <article class="tile tile--cocoa tile--coffee" aria-label="Coffee">
+          <span class="tile__label">Brewing</span>
+          <h3 class="tile__title">Potosi Natural Cider</h3>
+          <p class="tile__sub">TANAT · Valle del Cauca, Colombia</p>
+          <div class="chips" style="margin-top: 10px;">
+            <span class="chip">Wild Cherry</span>
+            <span class="chip">Red Plum</span>
+            <span class="chip">Blackberry</span>
+          </div>
+          <span class="tile__deco--bat" aria-hidden="true" style="font-size: 52px; right: 8px; bottom: 4px;">☕</span>
+        </article>
+
+        <!-- Reading -->
+        <article class="tile tile--paper tile--reading" id="reads" aria-label="Reading">
+          <div class="reading__head">
+            <span class="tile__label" style="color: var(--accent);">On the shelf</span>
+          </div>
+
+          <div class="shelf" aria-hidden="true">
+            <div class="spine" style="width: 36px; height: 145px; background: var(--leaf);"><span>Rework</span></div>
+            <div class="spine" style="width: 48px; height: 159px; background: var(--ink);"><span>Microtrends</span></div>
+            <div class="spine" style="width: 30px; height: 200px; background: var(--berry);"><span>Think Faster, Talk Smarter</span></div>
+            <div class="spine" style="width: 26px; height: 192px; background: var(--cocoa);"><span>Seven Myths About Money</span></div>
+            <div class="spine" style="width: 36px; height: 148px; background: var(--accent);"><span>Rewired</span></div>
+            <div class="spine" style="width: 28px; height: 189px; background: #7A1F4B;"><span>Love Is the Killer App</span></div>
+          </div>
+
+          <div class="current">
+            <div>
+              <div class="current__status" style="color: var(--berry);">Reading</div>
+              <div class="current__title">Think Faster, Talk Smarter</div>
+              <div class="current__author">Matt Abrahams</div>
+              <div class="current__bar"><span style="width: 60%; background: var(--berry);"></span></div>
+            </div>
+            <div>
+              <div class="current__status" style="color: var(--leaf);">Finished</div>
+              <div class="current__title">Seven Myths About Money</div>
+              <div class="current__author">Rob Dix</div>
+              <div class="current__bar"><span style="width: 100%; background: var(--leaf);"></span></div>
+            </div>
+            <div>
+              <div class="current__status" style="color: var(--accent);">Just started</div>
+              <div class="current__title">Rewired</div>
+              <div class="current__author">Eric Lamarre &amp; Kate Smaje</div>
+              <div class="current__bar"><span style="width: 10%; background: var(--accent);"></span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Get in touch ─────────────────────────────────────── -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__grid">
+        <header>
+          <span class="eyebrow">
+            <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 L14 9 L22 12 L14 15 L12 23 L10 15 L2 12 L10 9 Z" fill="var(--accent)" /></svg>
+            Chapter 03
+          </span>
+          <h2 class="contact__title" id="contact-title">Say <em><i>hello.</i></em></h2>
+          <svg class="squiggle" width="180" height="14" viewBox="0 0 120 14" aria-hidden="true">
+            <path d="M2 8 Q 12 1, 22 8 T 42 8 T 62 8 T 102 8 T 118 8" stroke="var(--accent)" stroke-width="2.5" fill="none" stroke-linecap="round" />
+          </svg>
+          <p class="contact__copy">
+            Best way to reach me is <strong>email</strong> or <strong>LinkedIn</strong>. Instagram is mostly personal: board-games and chocolate, in that order.
+          </p>
+        </header>
+
+        <ul class="channels">
+          <li>
+            <a href="mailto:setty@hey.com">
+              <span class="channels__icon channels__icon--email" aria-hidden="true">✉</span>
+              <span>
+                <span class="channels__label">Email</span>
+                <span class="channels__value">setty@hey.com</span>
+              </span>
+              <span class="channels__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/karthiksetty" target="_blank" rel="noopener">
+              <span class="channels__icon channels__icon--linkedin" aria-hidden="true">in</span>
+              <span>
+                <span class="channels__label">LinkedIn</span>
+                <span class="channels__value">linkedin.com/in/karthiksetty</span>
+              </span>
+              <span class="channels__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/s3tty" target="_blank" rel="noopener">
+              <span class="channels__icon channels__icon--insta" aria-hidden="true">◉</span>
+              <span>
+                <span class="channels__label">Instagram</span>
+                <span class="channels__value">@s3tty</span>
+              </span>
+              <span class="channels__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 L14 9 L22 12 L14 15 L12 23 L10 15 L2 12 L10 9 Z" fill="var(--accent)" /></svg>
+      © <script>document.write(new Date().getFullYear())</script> Karthik Setty
+    </div>
+    <div class="footer__tag">Building teams &amp; systems that last</div>
+  </footer>
+
+  <!-- ── Live clock (true Heidelberg / Europe:Berlin time) ──── -->
+  <script>
+    (function () {
+      const clockEl  = document.getElementById('clock');
+      const dateEl   = document.getElementById('clock-date');
+      const zonesEl  = document.getElementById('clock-zones');
+      if (!clockEl) return;
+
+      const fmt  = (n) => n.toString().padStart(2, '0');
+      const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+      const mons = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+      function inTZ(date, tz) {
+        return new Date(date.toLocaleString('en-US', { timeZone: tz }));
+      }
+
+      function tick() {
+        const now = new Date();
+        const hd  = inTZ(now, 'Europe/Berlin');
+        const blr = inTZ(now, 'Asia/Kolkata');
+        const nyc = inTZ(now, 'America/New_York');
+
+        // Determine offset label (CET / CEST)
+        const tzLabel = hd.getTimezoneOffset() === -120 ? 'CEST' : 'CET';
+
+        clockEl.innerHTML =
+          fmt(hd.getHours()) +
+          '<span class="sep">:</span>' +
+          fmt(hd.getMinutes()) +
+          '<span class="tz">' + tzLabel + '</span>';
+
+        dateEl.textContent =
+          days[hd.getDay()] + ' · ' + hd.getDate() + ' ' + mons[hd.getMonth()] + ' · ' + hd.getFullYear();
+
+        zonesEl.textContent =
+          'BLR ' + fmt(blr.getHours()) + ':' + fmt(blr.getMinutes()) +
+          ' · NYC ' + fmt(nyc.getHours()) + ':' + fmt(nyc.getMinutes());
+      }
+
+      tick();
+      setInterval(tick, 30 * 1000);
+    })();
+  </script>
 </body>
 </html>
