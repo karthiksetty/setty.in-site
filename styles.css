@@ -486,7 +486,7 @@ img.polaroid__img {
 /* Cricket / board / chocolate */
 .tile--cricket  { grid-column: span 4; min-height: 150px; }
 .tile--boards   { grid-column: span 4; min-height: 150px; }
-.tile--coffee { grid-column: span 4; min-height: 150px; }
+.tile--coffee { grid-column: span 4; min-height: 150px; padding-right: 70px; }
 .tile__sub { font-family: var(--font-body); font-size: 13px; opacity: 0.85; margin-top: 8px; }
 .tile__deco--bat {
   position: absolute; right: -6px; bottom: -10px; font-size: 78px; opacity: 0.9; transform: rotate(-12deg);
@@ -676,7 +676,6 @@ img.polaroid__img {
   .hero__lede .squiggle { display: none; }
   .polaroid--back { display: none; }
   .sticker { top: -14px; right: -10px; width: 76px; height: 76px; }
-  .shelf .spine:nth-child(n+5) { display: none; }
   .channels a { grid-template-columns: 44px 1fr 24px; gap: 12px; padding: 18px 2px; }
 }
 
